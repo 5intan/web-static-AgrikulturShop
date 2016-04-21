@@ -1,0 +1,512 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>AgrikulturShop | Sayuran</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-select.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/jquery-ui1.css">
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Resale Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!--fonts-->
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!--//fonts-->	
+<!-- js -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- js -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script>
+  $(document).ready(function () {
+    var mySelect = $('#first-disabled2');
+
+    $('#special').on('click', function () {
+      mySelect.find('option:selected').prop('disabled', true);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#special2').on('click', function () {
+      mySelect.find('option:disabled').prop('disabled', false);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#basic2').selectpicker({
+      liveSearch: true,
+      maxOptions: 1
+    });
+  });
+</script>
+<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+<link href="css/jquery.uls.css" rel="stylesheet"/>
+<link href="css/jquery.uls.grid.css" rel="stylesheet"/>
+<link href="css/jquery.uls.lcd.css" rel="stylesheet"/>
+<!-- Source -->
+<script src="js/jquery.uls.data.js"></script>
+<script src="js/jquery.uls.data.utils.js"></script>
+<script src="js/jquery.uls.lcd.js"></script>
+<script src="js/jquery.uls.languagefilter.js"></script>
+<script src="js/jquery.uls.regionfilter.js"></script>
+<script src="js/jquery.uls.core.js"></script>
+<script>
+			$( document ).ready( function() {
+				$( '.uls-trigger' ).uls( {
+					onSelect : function( language ) {
+						var languageName = $.uls.data.getAutonym( language );
+						$( '.uls-trigger' ).text( languageName );
+					},
+					quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr'] //FIXME
+				} );
+			} );
+		</script>
+    <script src="js/tabs.js"></script>
+	
+<script type="text/javascript">
+$(document).ready(function () {    
+var elem=$('#container ul');      
+	$('#viewcontrols a').on('click',function(e) {
+		if ($(this).hasClass('gridview')) {
+			elem.fadeOut(1000, function () {
+				$('#container ul').removeClass('list').addClass('grid');
+				$('#viewcontrols').removeClass('view-controls-list').addClass('view-controls-grid');
+				$('#viewcontrols .gridview').addClass('active');
+				$('#viewcontrols .listview').removeClass('active');
+				elem.fadeIn(1000);
+			});						
+		}
+		else if($(this).hasClass('listview')) {
+			elem.fadeOut(1000, function () {
+				$('#container ul').removeClass('grid').addClass('list');
+				$('#viewcontrols').removeClass('view-controls-grid').addClass('view-controls-list');
+				$('#viewcontrols .gridview').removeClass('active');
+				$('#viewcontrols .listview').addClass('active');
+				elem.fadeIn(1000);
+			});									
+		}
+	});
+});
+</script>
+</head>
+<body>
+<div class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><span>Agrikultur</span>Shop</a>
+			</div>
+			<div class="header-right">
+			<a class="account" href="login.html">Akun Saya</a>
+	<!-- Large modal -->
+			<div class="selectregion">
+				<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+				Daerah Anda</button>
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+					aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+										&times;</button>
+									<h4 class="modal-title" id="myModalLabel">
+										Pilih Lokasi Anda</h4>
+								</div>
+								<div class="modal-body">
+									 <form class="form-horizontal" role="form">
+										<div class="form-group">
+											<select id="basic2" class="show-tick form-control" multiple>
+												<optgroup label="Kota">
+													<option selected style="display:none;color:#eee;">Lokasi</option>
+													<option>Aceh</option>
+													<option>Bandung</option>
+													<option>Bekasi</option>
+													<option>Ciamis</option>
+													<option>Jakarta</option>
+													<option>Jogjakarta</option>
+													<option>Makassar</option>
+													<option>Malang</option>
+													<option>Medan</option>
+													<option>Pekalongan</option>
+													<option>Pemalang</option>
+													<option>Pontianak</option>
+													<option>Semarang</option>
+													<option>Solo</option>
+													<option>Surabaya</option>
+													<option>Surakarta</option>
+												</optgroup>
+											</select>
+										</div>
+									  </form>    
+								</div>
+							</div>
+						</div>
+					</div>
+				<script>
+				$('#myModal').modal('');
+				</script>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="banner text-center">
+	  <div class="container">    
+			<h1>Jual Beli Online   <span class="segment-heading">    disini </span> semua bisa Untung</h1>
+			<p>TAPI  yo sing JUJUR !!</p>
+			<a href="jual.html">Jual Hasil Panen</a>
+	  </div>
+	</div>
+	<!-- Mobiles -->
+	<div class="total-ads main-grid-border">
+		<div class="container">
+			<div class="select-box">
+				<div class="select-city-for-local-ads ads-list">
+					<label>Pilih daerah Anda untuk melihat produk lokal</label>
+						<select>
+												<optgroup label="Kota">
+													<option selected style="display:none;color:#eee;">Lokasi</option>
+													<option>Aceh</option>
+													<option>Bandung</option>
+													<option>Bekasi</option>
+													<option>Ciamis</option>
+													<option>Jakarta</option>
+													<option>Jogjakarta</option>
+													<option>Makassar</option>
+													<option>Malang</option>
+													<option>Medan</option>
+													<option>Pekalongan</option>
+													<option>Pemalang</option>
+													<option>Pontianak</option>
+													<option>Semarang</option>
+													<option>Solo</option>
+													<option>Surabaya</option>
+													<option>Surakarta</option>
+												</optgroup>	
+			            </select>
+				</div>
+				<div class="browse-category ads-list">
+					<label>Jenis Produk</label>
+					<select class="selectpicker show-tick" data-live-search="true">
+					  <option data-tokens="Semua">Semua</option>
+					  <option data-tokens="Buah-buahan">Buah-buahan</option>
+					  <option data-tokens="Sayuran">Sayuran</option>
+					  <option data-tokens="Makanan Pokok">Makanan Pokok</option>
+					  <option data-tokens="Bumbu Dapur">Bumbu Dapur</option>
+					  <option data-tokens="Rempah-rempah">Rempah-rempah</option>
+					  <option data-tokens="Pets">Pets</option>
+					</select>
+				</div>
+				<div class="search-product ads-list">
+					<label>Cari Produk</label>
+					<div class="search">
+						<div id="custom-search-input">
+						<div class="input-group">
+							<input type="text" class="form-control input-lg" />
+							<span class="input-group-btn">
+								<button class="btn btn-info btn-lg" type="button">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</span>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="all-categories">
+				<h3> Pilih dan temukan produk yang Anda inginkan</h3>
+				<ul class="all-cat-list">
+					<li><a href="buah.html">Buah-buahan <span class="num-of-ads">(5,78,076)</span></a></li>
+					<li><a href="sayur.html">Sayuran  <span class="num-of-ads">(3,66,495)</span></a></li>
+					<li><a href="pokok.html">Makanan Pokok  <span class="num-of-ads">(45,450)</span></a></li>
+					<li><a href="bumbu.html">Bumbu Dapur   <span class="num-of-ads">(1,77,145)</span></a></li>
+					<li><a href="rempah.html">Rempah-rempah   <span class="num-of-ads">(1,81,250)</span></a></li>
+					<li><a href="books-sports-hobbies.html">Books, Sports & Hobbies    <span class="num-of-ads">(66,822)</span></a></li>
+				</ul>
+			</div>
+			<ol class="breadcrumb" style="margin-bottom: 5px;">
+			  <li><a href="index.html">Halaman Utama</a></li>
+			  <li class="active">Semua Produk</li>
+			</ol>
+				<div class="ads-display col-md-9">
+					<div class="wrapper">					
+					<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+					  <ul id="myTab" class="nav nav-tabs nav-tabs-responsive" role="tablist">
+						<li role="presentation" class="active">
+						  <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">
+							<span class="text">Semua Produk</span>
+						  </a>
+						</li>
+					  </ul>
+					  <div id="myTabContent" class="tab-content">
+						<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+						   <div>
+												<div id="container">
+								<div class="view-controls-list" id="viewcontrols">
+									<label>lihat :</label>
+									<a class="gridview"><i class="glyphicon glyphicon-th"></i></a>
+									<a class="listview active"><i class="glyphicon glyphicon-th-list"></i></a>
+								</div>
+								<div class="sort">
+								   <div class="sort-by">
+										<label>Urutan : </label>
+										<select>
+														<option value="">Terbaru</option>
+														<option value="">Harga: Rendah - Tinggi</option>
+														<option value="">Harga: Tinggi - Rendah</option>
+										</select>
+									   </div>
+									 </div>
+								<div class="clearfix"></div>
+							<ul class="list">
+								<a href="single.html">
+									<li>
+									<img src="images/c1.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">Mentimun</h5>
+									<span class="adprice">Rp2000/kg</span>
+									<p class="catpath">Rincian Produk » </p>
+									</section>
+									<section class="list-right">
+									<span class="date">Hari ini, 17:55</span>
+									<span class="cityname">Pemalang</span>
+									</section>
+									<div class="clearfix"></div>
+									</li> 
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/c2.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">Brokoli</h5>
+									<span class="adprice">Rp3000</span>
+									<p class="catpath">Rincian Produk » </p>
+									</section>
+									<section class="list-right">
+									<span class="date">Hari ini, 17:45</span>
+									<span class="cityname">Malang</span>
+									</section>
+									<div class="clearfix"></div>
+									</li> 
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/c3.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">Sawi</h5>
+									<span class="adprice">Rp2000/ikat</span>
+									<p class="catpath">Rincian Produk » </p>
+									</section>
+									<section class="list-right">
+									<span class="date">Hari ini, 17:30</span>
+									<span class="cityname">Cilacap</span>
+									</section>
+									<div class="clearfix"></div>
+									</li> 
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/c4.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">Pare</h5>
+									<span class="adprice">Rp4500/kg</span>
+									<p class="catpath">Rincian Produk » </p>
+									</section>
+									<section class="list-right">
+									<span class="date">Hari ini, 17:25</span>
+									<span class="cityname">Surabaya</span>
+									</section>
+									<div class="clearfix"></div>
+									</li> 
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/c5.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">Tomat</h5>
+									<span class="adprice">Rp3000/kg</span>
+									<p class="catpath">Rincian Produk » </p>
+									</section>
+									<section class="list-right">
+									<span class="date">Hari ini, 17:24</span>
+									<span class="cityname">Ciamis</span>
+									</section>
+									<div class="clearfix"></div>
+									</li> 
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/c6.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">Wortel</h5>
+									<span class="adprice">Rp7000/kg</span>
+									<p class="catpath">Rincian Produk » </p>
+									</section>
+									<section class="list-right">
+									<span class="date">Hari ini, 17:22</span>
+									<span class="cityname">Jogjakarta</span>
+									</section>
+									<div class="clearfix"></div>
+									</li> 
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/a2.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">Kol</h5>
+									<span class="adprice">Rp6000/kg</span>
+									<p class="catpath">Rincian Produk » </p>
+									</section>
+									<section class="list-right">
+									<span class="date">Hari ini, 17:21</span>
+									<span class="cityname">Bandung</span>
+									</section>
+									<div class="clearfix"></div>
+									</li> 
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/c7.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">Buncis</h5>
+									<span class="adprice">Rp4000</span>
+									<p class="catpath">Rincian Produk » </p>
+									</section>
+									<section class="list-right">
+									<span class="date">Hari ini, 17:20</span>
+									<span class="cityname">Solo</span>
+									</section>
+									<div class="clearfix"></div>
+									</li> 
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/c8.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">Kangkung</h5>
+									<span class="adprice">Rp5000/ikat</span>
+									<p class="catpath">Rincian Produk » </p>
+									</section>
+									<section class="list-right">
+									<span class="date">Hari ini, 17:05</span>
+									<span class="cityname">Solo</span>
+									</section>
+									<div class="clearfix"></div>
+									</li> 
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/c9.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">Terong</h5>
+									<span class="adprice">Rp5000/kg</span>
+									<p class="catpath">Rincian Produk » </p>
+									</section>
+									<section class="list-right">
+									<span class="date">Hari ini, 17:04</span>
+									<span class="cityname">Semarang</span>
+									</section>
+									<div class="clearfix"></div>
+									</li> 
+								</a>
+								</a>
+							</ul>
+						</div>
+							</div>
+						</div>
+						<ul class="pagination pagination-sm">
+							<li><a href="#">Prev</a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">7</a></li>
+							<li><a href="#">8</a></li>
+							<li><a href="#">Next</a></li>
+						</ul>
+					  </div>
+					</div>
+				</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>	
+	</div>
+	<!-- // Mobiles -->
+	<!--footer section start-->		
+		<footer>
+			<div class="footer-top">
+				<div class="container">
+					<div class="foo-grids">
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Tentang Kami</h4>
+							<p>Kami menawarkan jasa untuk membantu Anda memasarkan hasil panen ke pembeli  
+							dengan cara yang mudah, cepat, dan praktis. </p>
+						</div>
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Bantuan</h4>
+							<ul>
+								<li><a href="cara.html">Proses Kerja</a></li>
+								<li><a href="contact.html">Hubungi</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Hubungi Kami</h4>
+							<span class="hq">Kantor Pusat Kami</span>
+							<address>
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-map-marker"></span></li>
+									<li>Kantor Pusat</li>
+									<div class="clearfix"></div>
+								</ul>	
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-earphone"></span></li>
+									<li>+621 446 123</li>
+									<div class="clearfix"></div>
+								</ul>	
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-envelope"></span></li>
+									<li><a href="mailto:info@example.com">mail@example.com</a></li>
+									<div class="clearfix"></div>
+								</ul>						
+							</address>
+						</div>
+						<div class="clearfix"></div>
+					</div>						
+				</div>	
+			</div>	
+			<div class="footer-bottom text-center">
+			<div class="container">
+				<div class="footer-logo">
+					<a href="index.html"><span>Agrikultur</span>Shop</a>
+				</div>
+				<div class="footer-social-icons">
+					<ul>
+						<li><a class="facebook" href="#"><span>Facebook</span></a></li>
+						<li><a class="twitter" href="#"><span>Twitter</span></a></li>
+						<li><a class="flickr" href="#"><span>Flickr</span></a></li>
+						<li><a class="googleplus" href="#"><span>Google+</span></a></li>
+						<li><a class="dribbble" href="#"><span>Dribbble</span></a></li>
+					</ul>
+				</div>
+				<div class="copyrights">
+					<p> © 2016 Resale. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		</footer>
+        <!--footer section end-->
+</body>
+</html>

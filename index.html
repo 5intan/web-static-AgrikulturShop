@@ -1,0 +1,430 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>AgrikulturShop</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-select.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Resale Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!--fonts-->
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!--//fonts-->	
+<!-- js -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- js -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script>
+  $(document).ready(function () {
+    var mySelect = $('#first-disabled2');
+
+    $('#special').on('click', function () {
+      mySelect.find('option:selected').prop('disabled', true);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#special2').on('click', function () {
+      mySelect.find('option:disabled').prop('disabled', false);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#basic2').selectpicker({
+      liveSearch: true,
+      maxOptions: 1
+    });
+  });
+</script>
+<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+<link href="css/jquery.uls.css" rel="stylesheet"/>
+<link href="css/jquery.uls.grid.css" rel="stylesheet"/>
+<link href="css/jquery.uls.lcd.css" rel="stylesheet"/>
+<!-- Source -->
+<script src="js/jquery.uls.data.js"></script>
+<script src="js/jquery.uls.data.utils.js"></script>
+<script src="js/jquery.uls.lcd.js"></script>
+<script src="js/jquery.uls.languagefilter.js"></script>
+<script src="js/jquery.uls.regionfilter.js"></script>
+<script src="js/jquery.uls.core.js"></script>
+<script>
+			$( document ).ready( function() {
+				$( '.uls-trigger' ).uls( {
+					onSelect : function( language ) {
+						var languageName = $.uls.data.getAutonym( language );
+						$( '.uls-trigger' ).text( languageName );
+					},
+					quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr'] //FIXME
+				} );
+			} );
+		</script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><span>Agrikultur</span>Shop</a>
+			</div>
+			<div class="header-right">
+			<a class="account" href="login.html">Akun Saya</a>
+	<!-- Large modal -->
+			<div class="selectregion">
+				<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+				Daerah Anda</button>
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+					aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+										&times;</button>
+									<h4 class="modal-title" id="myModalLabel">
+										Pilih Lokasi Anda</h4>
+								</div>
+								<div class="modal-body">
+									 <form class="form-horizontal" role="form">
+										<div class="form-group">
+											<select id="basic2" class="show-tick form-control" multiple>
+												<optgroup label="Kota">
+													<option selected style="display:none;color:#eee;">Lokasi</option>
+													<option>Aceh</option>
+													<option>Bandung</option>
+													<option>Bekasi</option>
+													<option>Ciamis</option>
+													<option>Jakarta</option>
+													<option>Jogjakarta</option>
+													<option>Makassar</option>
+													<option>Malang</option>
+													<option>Medan</option>
+													<option>Pekalongan</option>
+													<option>Pemalang</option>
+													<option>Pontianak</option>
+													<option>Semarang</option>
+													<option>Solo</option>
+													<option>Surabaya</option>
+													<option>Surakarta</option>
+												</optgroup>		
+											</select>
+										</div>
+									  </form>    
+								</div>
+							</div>
+						</div>
+					</div>
+				<script>
+				$('#myModal').modal('');
+				</script>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="main-banner banner text-center">
+	  <div class="container">    
+			<h1>Jual Beli Online  <span class="segment-heading">    disini </span> semua bisa Untung</h1>
+			<p>TAPI yo sing JUJUR !!</p>
+			<a href="jual.html">Jual Hasil Panen</a>
+	  </div>
+	</div>
+		<!-- content-starts-here -->
+		<div class="content">
+			<div class="categories">
+				<div class="container">
+					<div class="col-md-2 focus-grid">
+						<a href="buah.html">
+							<div class="focus-border">
+								<div class="focus-layout">
+									<div class="focus-image"><i class="fa fa-lemon-o"></i></div>
+									<h4 class="clrchg"> Buah-buahan</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 focus-grid">
+						<a href="sayur.html#parentVerticalTab2">
+							<div class="focus-border">
+								<div class="focus-layout">
+									<div class="focus-image"><i class="fa fa-tree"></i></div>
+									<h4 class="clrchg">Sayuran</h4>
+								</div>
+							</div>
+						</a>
+					</div>	
+					<div class="col-md-2 focus-grid">
+						<a href="pokok.html#parentVerticalTab3">
+							<div class="focus-border">
+								<div class="focus-layout">
+									<div class="focus-image"><i class="fa fa-certificate"></i></div>
+									<h4 class="clrchg">Makanan Pokok</h4>
+								</div>
+							</div>
+						</a>
+					</div>	
+					<div class="col-md-2 focus-grid">
+						<a href="bumbu.html#parentVerticalTab4">
+							<div class="focus-border">
+								<div class="focus-layout">
+									<div class="focus-image"><i class="fa fa-cog"></i></div>
+									<h4 class="clrchg">Bumbu Dapur</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 focus-grid">
+						<a href="rempah.html#parentVerticalTab5">
+							<div class="focus-border">
+								<div class="focus-layout">
+									<div class="focus-image"><i class="fa fa-circle"></i></div>
+									<h4 class="clrchg">Rempah-rempah</h4>
+								</div>
+							</div>
+						</a>
+					</div>	
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="trending-ads">
+				<div class="container">
+				<!-- slider -->
+				<div class="trend-ads">
+					<h2>Produk Terbaru</h2>
+							<ul id="flexiselDemo3">
+								<li>
+									<div class="col-md-3 biseller-column">
+										<a href="single.html">
+											<img src="images/p1.jpg"/>
+											<span class="price">Rp7k</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Anggur Hijau</h5>
+											<span>1 jam lalu</span>
+										</div>
+									</div>
+									<div class="col-md-3 biseller-column">
+										<a href="single.html">
+											<img src="images/p2.jpg"/>
+											<span class="price">Rp9k</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Apel Merah</h5>
+											<span>3 jam lalu</span>
+										</div>
+									</div>
+									<div class="col-md-3 biseller-column">
+										<a href="single.html">
+											<img src="images/p3.jpg"/>
+											<span class="price">Rp7,5k</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Paprika</h5>
+											<span>8 jam lalu</span>
+										</div>
+									</div>
+									<div class="col-md-3 biseller-column">
+										<a href="single.html">
+											<img src="images/p4.jpg"/>
+											<span class="price">Rp8k</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Cengkeh</h5>
+											<span>19 jam lalu</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="col-md-3 biseller-column">
+										<a href="single.html">
+											<img src="images/p5.jpg"/>
+											<span class="price">Rp3k</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Palawija</h5>
+											<span>1 jam lalu</span>
+										</div>
+									</div>
+									<div class="col-md-3 biseller-column">
+										<a href="single.html">
+											<img src="images/p6.jpg"/>
+											<span class="price">Rp10k</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Beras Merah</h5>
+											<span>1 jam lalu</span>
+										</div>
+									</div>
+									<div class="col-md-3 biseller-column">
+										<a href="single.html">
+											<img src="images/p7.jpg"/>
+											<span class="price">Rp6,5k</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Strawberry</h5>
+											<span>9 jam lalu</span>
+										</div>
+									</div>
+									<div class="col-md-3 biseller-column">
+										<a href="single.html">
+											<img src="images/p8.jpg"/>
+											<span class="price">Rp7k</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Jambu Biji</h5>
+											<span>3 jam lalu</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="col-md-3 biseller-column">
+										<a href="single.html">
+											<img src="images/p9.jpg"/>
+											<span class="price">Rp4k</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Pisang</h5>
+											<span>3 jam lalu</span>
+										</div>
+									</div>
+									<div class="col-md-3 biseller-column">
+										<a href="single.html">
+											<img src="images/p10.jpg"/>
+											<span class="price">Rp8k</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Semangka Tanpa Biji</h5>
+											<span>9 jam lalu</span>
+										</div>
+									</div>
+									<div class="col-md-3 biseller-column">
+										<a href="single.html">
+											<img src="images/c9.jpg"/>
+											<span class="price">Rp3k</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Terong</h5>
+											<span>1 jam lalu</span>
+										</div>
+									</div>
+									<div class="col-md-3 biseller-column">
+										<a href="single.html">
+											<img src="images/d2.jpg"/>
+											<span class="price">Rp10k</span>
+										</a> 
+										<div class="ad-info">
+											<h5>Beras Merah</h5>
+											<span>1 jam lalu</span>
+										</div>
+									</div>
+								</li>
+						</ul>
+					<script type="text/javascript">
+						 $(window).load(function() {
+							$("#flexiselDemo3").flexisel({
+								visibleItems:1,
+								animationSpeed: 1000,
+								autoPlay: true,
+								autoPlaySpeed: 5000,    		
+								pauseOnHover: true,
+								enableResponsiveBreakpoints: true,
+								responsiveBreakpoints: { 
+									portrait: { 
+										changePoint:480,
+										visibleItems:1
+									}, 
+									landscape: { 
+										changePoint:640,
+										visibleItems:1
+									},
+									tablet: { 
+										changePoint:768,
+										visibleItems:1
+									}
+								}
+							});
+							
+						});
+					   </script>
+					   <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+					</div>   
+			</div>
+			<!-- //slider -->				
+			</div>
+			
+		<!--footer section start-->		
+		<footer>
+			<div class="footer-top">
+				<div class="container">
+					<div class="foo-grids">
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Tentang Kami</h4>
+							<p>Kami menawarkan jasa untuk membantu Anda memasarkan hasil panen ke pembeli  
+							dengan cara yang mudah, cepat, dan praktis. </p>
+						</div>
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Bantuan</h4>
+							<ul>
+								<li><a href="cara.html">Proses Kerja</a></li>
+								<li><a href="contact.html">Hubungi</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Hubungi Kami</h4>
+							<span class="hq">Kantor Pusat Kami</span>
+							<address>
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-map-marker"></span></li>
+									<li>Kantor Pusat</li>
+									<div class="clearfix"></div>
+								</ul>	
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-earphone"></span></li>
+									<li>+621 446 123</li>
+									<div class="clearfix"></div>
+								</ul>	
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-envelope"></span></li>
+									<li><a href="mailto:info@example.com">mail@example.com</a></li>
+									<div class="clearfix"></div>
+								</ul>						
+							</address>
+						</div>
+						<div class="clearfix"></div>
+					</div>						
+				</div>	
+			</div>	
+			<div class="footer-bottom text-center">
+			<div class="container">
+				<div class="footer-logo">
+					<a href="index.html"><span>Agrikultur</span>Shop</a>
+				</div>
+				<div class="footer-social-icons">
+					<ul>
+						<li><a class="facebook" href="#"><span>Facebook</span></a></li>
+						<li><a class="twitter" href="#"><span>Twitter</span></a></li>
+						<li><a class="flickr" href="#"><span>Flickr</span></a></li>
+						<li><a class="googleplus" href="#"><span>Google+</span></a></li>
+						<li><a class="dribbble" href="#"><span>Dribbble</span></a></li>
+					</ul>
+				</div>
+				<div class="copyrights">
+					<p> © 2016 Resale. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		</footer>
+        <!--footer section end-->
+</body>
+</html>
